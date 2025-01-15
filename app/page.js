@@ -231,15 +231,15 @@ return (
 
       {/* Top Cards */} 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-5">
-        <div className="bg-[#f5f7fa] p-6 rounded-xl flex items-center justify-between shadow-lg hover:bg-[#e4e9f2] transition-colors">
+        <div className="bg-[#f5f7fa] p-6 rounded-xl flex items-center justify-between shadow-lg max-w-auto hover:bg-[#e4e9f2] transition-colors">
           <h3 className="text-lg font-semibold text-gray-700">Total Complaints Registered</h3>
           <p className="text-2xl font-bold text-blue-600">{topCardsData.Registered}</p>
         </div>
-        <div className="bg-[#f5f7fa] p-6 rounded-xl flex items-center justify-between shadow-lg hover:bg-[#e4e9f2] transition-colors">
+        <div className="bg-[#f5f7fa] p-6 rounded-xl flex items-center justify-between shadow-lg max-w-auto hover:bg-[#e4e9f2] transition-colors">
           <h3 className="text-lg font-semibold text-gray-700">Total Complaints Resolved</h3>
           <p className="text-2xl font-bold text-green-600">{topCardsData.Resolved}</p>
         </div>
-        <div className="bg-[#f5f7fa] p-6 rounded-xl flex items-center justify-between shadow-lg hover:bg-[#e4e9f2] transition-colors">
+        <div className="bg-[#f5f7fa] p-6 rounded-xl flex items-center justify-between shadow-lg max-w-auto hover:bg-[#e4e9f2] transition-colors">
           <h3 className="text-lg font-semibold text-gray-700">Total Complaints Pending</h3>
           <p className="text-2xl font-bold text-red-600">{topCardsData.Pending}</p>
         </div>
@@ -271,7 +271,7 @@ return (
       </div>
 
       {/* Pivot Table Town wise */} 
-      <div className=" p-32 rounded-lg flex items-center -mt-24">
+      <div className=" p-32 rounded-lg flex items-center max-w-auto -mt-24">
         <table className="min-w-full bg-white shadow-lg rounded-xl">
           <thead className="bg-gray-200">
             <tr>
@@ -301,8 +301,8 @@ return (
         <h2 className="text-2xl font-bold">OPEN MANHOLE TOWN WISE</h2>
       </div>
 
-      <div className="space-y-6 mt-5">
-        <table className="p-6 w-full bg-white shadow-lg rounded-xl">
+      <div className="space-y-6 mt-5 max-w-auto">
+        <table className="p-6 w-full bg-white shadow-lg rounded-xl max-w-auto">
           <thead>
             <tr>
               <th className="border p-2 bg-gray-200">Category</th>
@@ -325,7 +325,7 @@ return (
           </tbody>
         </table>
 
-        <table className="p-6 w-full bg-white shadow-lg rounded-xl">
+        <table className="p-6 w-full bg-white shadow-lg rounded-xl max-w-auto">
           <thead>
             <tr>
               <th className="border p-2 bg-gray-200">Category</th>
@@ -350,12 +350,12 @@ return (
       </div>
 
       {/* Damage Manhole */} 
-      <div className="text-center font-semibold  text-white mt-5">
+      <div className="text-center font-semibold  text-white mt-5 max-w-auto">
         <h2 className="text-2xl font-bold">DAMAGE MANHOLE TOWN WISE</h2>
       </div>
 
       <div className="space-y-6 mt-5">
-        <table className="p-6 w-full bg-white shadow-lg rounded-xl">
+        <table className="p-6 w-full bg-white shadow-lg rounded-xl max-w-auto">
           <thead>
             <tr>
               <th className="border p-2 bg-gray-200">Category</th>
@@ -378,7 +378,7 @@ return (
           </tbody>
         </table>
 
-        <table className="p-6 w-full bg-white shadow-lg rounded-xl">
+        <table className="p-6 w-full bg-white shadow-lg rounded-xl max-w-auto">
           <thead>
             <tr>
               <th className="border p-2 bg-gray-200">Category</th>
