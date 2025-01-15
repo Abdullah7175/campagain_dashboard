@@ -209,7 +209,7 @@ useEffect(() => {
 }, []);
 
 return (
-  <div className="bg-[#338461] min-h-screen flex flex-col text-gray-800"> 
+  <div className="bg-[#338461] min-h-screen flex flex-col max-w-auto text-gray-800"> 
     {/* Header */} 
     <div className="flex items-center w-full max-4xl justify-between p-6">
       {/* Logo */} 
