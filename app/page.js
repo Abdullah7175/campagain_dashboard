@@ -33,6 +33,11 @@ export default function Home() {
     }
 
     fetchTopCards();
+    const interval = setInterval(() => {
+      fetchTopCards();
+    }, 10000); // Refresh every 10 seconds
+  
+    return () => clearInterval(interval);
   }, []);
 
   useEffect(() => {
@@ -48,6 +53,12 @@ export default function Home() {
     }
 
     fetchs();
+    const interval = setInterval(() => {
+      fetchs();
+    }, 11000); // Refresh every 10 seconds
+  
+    return () => clearInterval(interval);
+    
   }, []);
 
   useEffect(() => {
@@ -62,6 +73,11 @@ export default function Home() {
     };
 
     fetchPivotData();
+    const interval = setInterval(() => {
+      fetchPivotData();
+    }, 12000); // Refresh every 10 seconds
+  
+    return () => clearInterval(interval);
   }, []);
 
 
@@ -122,6 +138,11 @@ useEffect(() => {
   }
 
   fetchData();
+  const interval = setInterval(() => {
+    fetchData();
+  }, 13000); // Refresh every 10 seconds
+
+  return () => clearInterval(interval);
 }, []);
 
 useEffect(() => {
@@ -180,6 +201,11 @@ useEffect(() => {
   }
 
   fetchData2();
+  const interval = setInterval(() => {
+    fetchData2();
+  }, 14000); // Refresh every 10 seconds
+
+  return () => clearInterval(interval);
 }, []);
 
 return (
