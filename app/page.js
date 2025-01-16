@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link"
 import { Chart as ChartJS, BarElement, CategoryScale, LinearScale, Tooltip, Legend } from "chart.js";
 
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
@@ -209,25 +210,38 @@ useEffect(() => {
 }, []);
 
 return (
-  <div className="bg-[#338461] min-h-screen flex flex-col overflow-x-auto text-gray-800"> 
+  <div  className="bg-[url(/CMC2.jpg)] bg-cover bg-no-repeat min-h-screen flex flex-col overflow-x-auto text-gray-800"> 
     {/* Header */} 
-    <div className="flex items-center w-full max-4xl justify-between p-6">
+    <div className="flex items-center w-full max-xl justify-between ">
       {/* Logo */} 
-      <Image src="/kl.png" alt="Logo" width={70} height={70} />
+      <Image src="/kl.png" alt="Logo" width={180} height={100} />
 
       {/* Page Title */} 
-      <div className="text-3xl font-bold flex-1 ml-10 text-center text-white">
-        CMC | KARACHI WATER & SEWERAGE CORPORATION
+      <div className="text-6xl font-bold flex-1 ml-10 text-center text-white">
+        CMC | KARACHI WATER & SEWERAGE CORPORATION<div className="text-4xl font-bold flex-1 ml-10 text-center text-white">
+        COMPLAIN MANAGEMENT CENTER
+      </div>
       </div>
     </div>
 
     {/* Main Content */} 
-    <main className="flex-grow flex flex-col text-center py-2">
+    <main className="flex-grow flex flex-col text-center py-0">
 
-      <div className="text-center font-semibold text-gray-800">
+      <div className="flex items-center w-full max-xl justify-between ">
+      {/* Logo */} 
+      <Link href="https://complain.kwsc.gos.pk/">
+      <button variant="ghost" className="p-4 rounded-xl bg-yellow-400">
+              Track Your Complain
+      </button>
+      </Link>
+
+      {/* Page Title */} 
+      <div className="text-center font-semibold flex-1 ml-10  text-gray-800">
         <h2 className="text-2xl font-bold text-white">MANHOLE CAMPAIGN LIVE REPORT</h2>
-        <p className="text-gray-200">Campaign Starting Date: 8th, January 2025</p>
+        <p className="text-white">Campaign Starting Date: 8th, January 2025</p>
+        
       </div>
+    </div>
 
       {/* Top Cards */} 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-5 px-2">
