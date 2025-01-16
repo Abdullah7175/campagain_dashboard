@@ -294,9 +294,9 @@ return (
       {/* Pivot Table Town wise */} 
       <div className="pt-4 py-32 px-2 rounded-lg flex items-center max-w-auto">
         <table className="min-w-full shadow-lg rounded">
-          <thead className="bg-gray-200">
+          <thead className="bg-gray-300">
             <tr>
-              <th className="p-2">Type</th>
+              <th className="p-2">Sub-Type</th>
               <th className="p-2">Received</th>
               <th className="p-2">Resolved</th>
               <th className="p-2">Pending</th>
@@ -327,9 +327,9 @@ return (
         <table className="my-3 p-6 w-full bg-white shadow-lg rounded max-w-auto">
           <thead>
             <tr>
-              <th className="border p-2 bg-gray-200">Category</th>
+              <th className="border p-2 bg-gray-300">Category</th>
               {firstHalfTowns.map((town, index) => (
-                <th key={`first-half-${index}`} className="border p-2 bg-gray-200">{town}</th>
+                <th key={`first-half-${index}`} className="border p-2 bg-gray-300">{town}</th>
               ))}
             </tr>
           </thead>
@@ -350,9 +350,9 @@ return (
         <table className="p-6 w-full bg-white shadow-lg rounded max-w-auto">
           <thead>
             <tr>
-              <th className="border p-2 bg-gray-200">Category</th>
+              <th className="border p-2 bg-gray-300">Category</th>
               {secondHalfTowns.map(town => (
-                <th key={town} className="border p-2 bg-gray-200">{town}</th>
+                <th key={town} className="border p-2 bg-gray-300">{town}</th>
               ))}
             </tr>
           </thead>
@@ -380,9 +380,9 @@ return (
         <table className="my-3 p-6 w-full bg-white shadow-lg rounded max-w-auto">
           <thead>
             <tr>
-              <th className="border p-2 bg-gray-200">Category</th>
+              <th className="border p-2 bg-gray-300">Category</th>
               {firstHalfTowns2.map((town, index) => (
-                <th key={`first-half-${index}`} className="border p-2 bg-gray-200">{town}</th>
+                <th key={`first-half-${index}`} className="border p-2 bg-gray-300">{town}</th>
               ))}
             </tr>
           </thead>
@@ -403,9 +403,9 @@ return (
         <table className="p-6 w-full bg-white shadow-lg rounded-xl max-w-auto">
           <thead>
             <tr>
-              <th className="border p-2 bg-gray-200">Category</th>
+              <th className="border p-2 bg-gray-300">Category</th>
               {secondHalfTowns2.map(town => (
-                <th key={town} className="border p-2 bg-gray-200">{town}</th>
+                <th key={town} className="border p-2 bg-gray-300">{town}</th>
               ))}
             </tr>
           </thead>
@@ -426,7 +426,7 @@ return (
     </main>
 
     {/* Footer */} 
-    <footer className="bg-gray-800 text-white py-3 w-[1440px] md:w-full">
+    <footer className="bg-gray-800 text-white py-3 w-[1440px] md:w-full mt-2">
       <div className="container mx-auto text-center">
         <p>&copy; {new Date().getFullYear()} Karachi Water and Sewerage Corporation</p>
       </div>
