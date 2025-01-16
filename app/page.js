@@ -210,15 +210,15 @@ useEffect(() => {
 }, []);
 
 return (
-  <div  className="bg-[url(/CMC2.jpg)] bg-cover bg-no-repeat min-h-screen flex flex-col overflow-x-auto text-gray-800"> 
+  <div  className="bg-[url(/CMC2.jpg)] bg-cover bg-no-repeat bg-opacity-70 min-h-screen flex flex-col overflow-x-auto text-gray-800"> 
     {/* Header */} 
-    <div className="flex items-center w-full max-xl justify-between ">
+    <div className="flex flex-col sm:flex-row items-center w-full max-xl justify-between ">
       {/* Logo */} 
       <Image src="/kl.png" alt="Logo" width={180} height={100} />
 
       {/* Page Title */} 
-      <div className="text-6xl font-bold flex-1 ml-10 text-center text-white">
-        CMC | KARACHI WATER & SEWERAGE CORPORATION<div className="text-4xl font-bold flex-1 ml-10 text-center text-white">
+      <div className="text-2xl sm:text-6xl font-bold flex-1 text-center text-white">
+        CMC | KARACHI WATER & SEWERAGE CORPORATION<div className="text-xl sm:text-4xl mt-2 font-bold flex-1 text-center text-white">
         COMPLAIN MANAGEMENT CENTER
       </div>
       </div>
@@ -227,17 +227,17 @@ return (
     {/* Main Content */} 
     <main className="flex-grow flex flex-col text-center py-0">
 
-      <div className="flex items-center w-full max-xl justify-between ">
+      <div className="flex flex-col sm:flex-row items-center w-full max-xl justify-center sm:justify-between ">
       {/* Logo */} 
       <Link href="https://complain.kwsc.gos.pk/">
-      <button variant="ghost" className="p-4 ml-2 rounded-xl bg-yellow-200">
+      <button variant="ghost" className="p-4 ml-2 my-5 rounded-xl bg-yellow-200">
               Track Your Complain
       </button>
       </Link>
 
       {/* Page Title */} 
-      <div className="text-center font-semibold flex-1 ml-10  text-gray-800">
-        <h2 className="text-2xl font-bold text-white">MANHOLE CAMPAIGN LIVE REPORT</h2>
+      <div className="text-center font-semibold flex-1 text-gray-800">
+        <h2 className="text-2xl mt-1 font-bold text-white">MANHOLE CAMPAIGN LIVE REPORT</h2>
         <p className="text-white">Campaign Starting Date: 8th, January 2025</p>
         
       </div>
@@ -291,7 +291,7 @@ return (
 
       {/* Pivot Table Town wise */} 
       <div className="pt-4 py-32 px-2 rounded-lg flex items-center max-w-auto">
-        <table className="min-w-full bg-white shadow-lg rounded">
+        <table className="min-w-full shadow-lg rounded">
           <thead className="bg-gray-200">
             <tr>
               <th className="p-2">Type</th>
@@ -303,7 +303,7 @@ return (
           </thead>
           <tbody>
             {pivotData.map((row, index) => (
-              <tr key={index} className="text-center">
+              <tr key={index} className="text-center odd:bg-blue-200 even:bg-blue-400">
                 <td className="border p-2">{row.type}</td>
                 <td className="border p-2">{row.total_registered}
                 </td>
@@ -333,7 +333,7 @@ return (
           </thead>
           <tbody>
             {townPivot.map((row, index) => (
-              <tr key={`pivot-row-${index}`} className="">
+              <tr key={`pivot-row-${index}`} className="odd:bg-blue-200 even:bg-blue-400">
                 <td className="border px-4 py-2 ">{row.category}</td>
                 {firstHalfTowns.map(town => (
                   <td key={`town-${town}-${index}`} className="border px-4 py-2 text-center">
@@ -356,7 +356,7 @@ return (
           </thead>
           <tbody>
             {townPivot.map((row, index) => (
-              <tr key={`pivot-row-${index}`}>
+              <tr key={`pivot-row-${index}`} className="odd:bg-blue-200 even:bg-blue-400">
                 <td className="border  px-4 py-2">{row.category}</td>
                 {secondHalfTowns.map(town => (
                   <td key={town} className="border  px-4 py-2 text-center">
@@ -386,7 +386,7 @@ return (
           </thead>
           <tbody>
             {townPivot2.map((row, index) => (
-              <tr key={`pivot-row-${index}`}>
+              <tr key={`pivot-row-${index}`} className="odd:bg-blue-200 even:bg-blue-400">
                 <td className="border  px-4 py-2">{row.category}</td>
                 {firstHalfTowns2.map(town => (
                   <td key={`town-${town}-${index}`} className="border  px-4 py-2 text-center">
@@ -409,7 +409,7 @@ return (
           </thead>
           <tbody>
             {townPivot2.map((row, index) => (
-              <tr key={`pivot-row-${index}`}>
+              <tr key={`pivot-row-${index}`} className="odd:bg-blue-200 even:bg-blue-400">
                 <td className="border  px-4 py-2">{row.category}</td>
                 {secondHalfTowns2.map(town => (
                   <td key={town} className="border  px-4 py-2 text-center">
