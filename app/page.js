@@ -230,7 +230,7 @@ return (
       <div className="flex items-center w-full max-xl justify-between ">
       {/* Logo */} 
       <Link href="https://complain.kwsc.gos.pk/">
-      <button variant="ghost" className="p-4 rounded-xl bg-yellow-200">
+      <button variant="ghost" className="p-4 ml-2 rounded-xl bg-yellow-200">
               Track Your Complain
       </button>
       </Link>
@@ -271,17 +271,17 @@ return (
       {/* Small Cards */} 
       <div className="flex justify-center items-center w-full px-2 mt-5">
         <div className="flex flex-row gap-2">
-          <div className="bg-[#235eb6] p-4 rounded-lg shadow-md border h-15">
+          <div className="bg-[#235eb6] p-4 rounded-lg shadow-md  h-15">
             <h3 className="text-lg font-semibold text-white ">
               Web-Portal: <span className="font-bold text-white">{sdata.webpage}</span>
             </h3>
           </div>
-          <div className="bg-[#efa459] p-4 rounded-lg shadow-md border h-15">
+          <div className="bg-[#efa459] p-4 rounded-lg shadow-md h-15">
             <h3 className="text-lg font-semibold text-white">
               Mobile-App: <span className="font-bold text-white">{sdata.Mobile_App}</span>
             </h3>
           </div>
-          <div className="bg-[#3ef150] p-4 rounded-lg shadow-md border h-15">
+          <div className="bg-[#3ef150] p-4 rounded-lg shadow-md h-15">
             <h3 className="text-lg font-semibold text-white">
               Call Center: <span className="font-bold text-white">{sdata.Call_Center_CC}</span>
             </h3>
