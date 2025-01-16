@@ -245,17 +245,17 @@ return (
 
       {/* Top Cards */} 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-5 px-2">
-        <div className="bg-[#4285eb] p-6 rounded-xl flex items-center justify-between shadow-lg max-w-auto hover:bg-[#e4e9f2] transition-colors">
+        <div className="bg-[#4285eb] p-6 rounded-xl flex items-center justify-between shadow-lg max-w-auto">
           <h3 className="text-lg font-semibold text-white">Total Complaints Registered</h3>
           <p className="text-2xl font-bold text-white">{topCardsData.Registered}</p>
         </div>
-        <div className="bg-[#3ef150] p-6 rounded-xl flex items-center justify-between shadow-lg max-w-auto hover:bg-[#e4e9f2] transition-colors">
+        <div className="bg-[#3ef150] p-6 rounded-xl flex items-center justify-between shadow-lg max-w-auto ">
           <h3 className="text-lg font-semibold text-white">Total Complaints Resolved</h3>
           <p className="text-2xl font-bold text-white leading-none">{topCardsData.Resolved}
           <br/><span className="text-white text-sm font-thin ml-1">{((topCardsData.Resolved / topCardsData.Registered) * 100).toFixed(2)}%</span>
           </p>
         </div>
-        <div className="bg-[#f03232] p-6 rounded-xl flex items-center justify-between shadow-lg max-w-auto hover:bg-[#e4e9f2] transition-colors">
+        <div className="bg-[#f03232] p-6 rounded-xl flex items-center justify-between shadow-lg max-w-auto ">
           <h3 className="text-lg font-semibold text-white">Total Complaints Pending</h3>
           <p className="text-2xl font-bold text-white leading-none">{topCardsData.Pending}
           <br/><span className="text-white text-sm font-thin ml-1">{((topCardsData.Pending / topCardsData.Registered) * 100).toFixed(2)}%</span>
@@ -264,7 +264,7 @@ return (
         </div>
       </div>
 
-      <div className="text-center font-semibold text-gray-800 mt-5">
+      <div className="text-center font-semibold text-white mt-5">
         <h2 className="text-2xl font-bold text-white">SOURCE OF COMPLAINTS</h2>
       </div>
 
