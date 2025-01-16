@@ -229,10 +229,12 @@ return (
 
       <div className="flex flex-col sm:flex-row items-center w-full max-xl justify-center sm:justify-between ">
       {/* Logo */} 
-      <Link href="https://complain.kwsc.gos.pk/">
-      <button variant="ghost" className="p-4 ml-2 my-5 rounded-xl bg-yellow-200">
-              Track Your Complain
-      </button>
+      <Link href="https://complain.kwsc.gos.pk/" className="text-white flex items-center font-bold text-xl">
+        <img
+          src="/track.png"
+          alt="KWSC Logo"
+          className="ml-6 cursor-pointer mr-4 w-[60px] h-[50px]"
+        /> Track Complaint
       </Link>
 
       {/* Page Title */} 
