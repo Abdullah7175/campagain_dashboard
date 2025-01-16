@@ -230,7 +230,7 @@ return (
       <div className="flex items-center w-full max-xl justify-between ">
       {/* Logo */} 
       <Link href="https://complain.kwsc.gos.pk/">
-      <button variant="ghost" className="p-4 rounded-xl bg-yellow-400">
+      <button variant="ghost" className="p-4 rounded-xl bg-yellow-200">
               Track Your Complain
       </button>
       </Link>
@@ -245,20 +245,20 @@ return (
 
       {/* Top Cards */} 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-5 px-2">
-        <div className="bg-[#f5f7fa] p-6 rounded-xl flex items-center justify-between shadow-lg max-w-auto hover:bg-[#e4e9f2] transition-colors">
-          <h3 className="text-lg font-semibold text-gray-700">Total Complaints Registered</h3>
-          <p className="text-2xl font-bold text-blue-600">{topCardsData.Registered}</p>
+        <div className="bg-[#4285eb] p-6 rounded-xl flex items-center justify-between shadow-lg max-w-auto hover:bg-[#e4e9f2] transition-colors">
+          <h3 className="text-lg font-semibold text-white">Total Complaints Registered</h3>
+          <p className="text-2xl font-bold text-white">{topCardsData.Registered}</p>
         </div>
-        <div className="bg-[#f5f7fa] p-6 rounded-xl flex items-center justify-between shadow-lg max-w-auto hover:bg-[#e4e9f2] transition-colors">
-          <h3 className="text-lg font-semibold text-gray-700">Total Complaints Resolved</h3>
-          <p className="text-2xl font-bold text-green-600 leading-none">{topCardsData.Resolved}
-          <br/><span className="text-gray-500 text-sm font-thin ml-1">{((topCardsData.Resolved / topCardsData.Registered) * 100).toFixed(2)}%</span>
+        <div className="bg-[#3ef150] p-6 rounded-xl flex items-center justify-between shadow-lg max-w-auto hover:bg-[#e4e9f2] transition-colors">
+          <h3 className="text-lg font-semibold text-white">Total Complaints Resolved</h3>
+          <p className="text-2xl font-bold text-white leading-none">{topCardsData.Resolved}
+          <br/><span className="text-white text-sm font-thin ml-1">{((topCardsData.Resolved / topCardsData.Registered) * 100).toFixed(2)}%</span>
           </p>
         </div>
-        <div className="bg-[#f5f7fa] p-6 rounded-xl flex items-center justify-between shadow-lg max-w-auto hover:bg-[#e4e9f2] transition-colors">
-          <h3 className="text-lg font-semibold text-gray-700">Total Complaints Pending</h3>
-          <p className="text-2xl font-bold text-red-600 leading-none">{topCardsData.Pending}
-          <br/><span className="text-gray-500 text-sm font-thin ml-1">{((topCardsData.Pending / topCardsData.Registered) * 100).toFixed(2)}%</span>
+        <div className="bg-[#f03232] p-6 rounded-xl flex items-center justify-between shadow-lg max-w-auto hover:bg-[#e4e9f2] transition-colors">
+          <h3 className="text-lg font-semibold text-white">Total Complaints Pending</h3>
+          <p className="text-2xl font-bold text-white leading-none">{topCardsData.Pending}
+          <br/><span className="text-white text-sm font-thin ml-1">{((topCardsData.Pending / topCardsData.Registered) * 100).toFixed(2)}%</span>
           </p>
           
         </div>
@@ -281,7 +281,7 @@ return (
               Mobile-App: <span className="font-bold text-white">{sdata.Mobile_App}</span>
             </h3>
           </div>
-          <div className="bg-[#48c04e] p-4 rounded-lg shadow-md border h-15">
+          <div className="bg-[#3ef150] p-4 rounded-lg shadow-md border h-15">
             <h3 className="text-lg font-semibold text-white">
               Call Center: <span className="font-bold text-white">{sdata.Call_Center_CC}</span>
             </h3>
