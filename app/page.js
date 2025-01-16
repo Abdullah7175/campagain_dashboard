@@ -209,7 +209,7 @@ useEffect(() => {
 }, []);
 
 return (
-  <div className="bg-[#338461] min-h-screen flex flex-col max-w-auto text-gray-800"> 
+  <div className="bg-[#338461] min-h-screen flex flex-col overflow-x-auto text-gray-800"> 
     {/* Header */} 
     <div className="flex items-center w-full max-4xl justify-between p-6">
       {/* Logo */} 
@@ -230,7 +230,7 @@ return (
       </div>
 
       {/* Top Cards */} 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-5 px-2">
         <div className="bg-[#f5f7fa] p-6 rounded-xl flex items-center justify-between shadow-lg max-w-auto hover:bg-[#e4e9f2] transition-colors">
           <h3 className="text-lg font-semibold text-gray-700">Total Complaints Registered</h3>
           <p className="text-2xl font-bold text-blue-600">{topCardsData.Registered}</p>
@@ -250,8 +250,8 @@ return (
       </div>
 
       {/* Small Cards */} 
-      <div className="flex justify-center items-center w-full mt-5">
-        <div className="flex flex-row gap-4">
+      <div className="flex justify-center items-center w-full px-2 mt-5">
+        <div className="flex flex-row gap-2">
           <div className="bg-[#235eb6] p-4 rounded-lg shadow-md border h-15">
             <h3 className="text-lg font-semibold text-white ">
               Web-Portal: <span className="font-bold text-white">{sdata.webpage}</span>
@@ -271,15 +271,15 @@ return (
       </div>
 
       {/* Pivot Table Town wise */} 
-      <div className=" p-32 rounded-lg flex items-center max-w-auto -mt-24">
-        <table className="min-w-full bg-white shadow-lg rounded-xl">
+      <div className="pt-4 py-32 px-2 rounded-lg flex items-center max-w-auto">
+        <table className="min-w-full bg-white shadow-lg rounded">
           <thead className="bg-gray-200">
             <tr>
-              <th className="border p-2">Type</th>
-              <th className="border p-2">Received</th>
-              <th className="border p-2">Resolved</th>
-              <th className="border p-2">Pending</th>
-              <th className="border p-2">Resolved Percentage</th>
+              <th className="p-2">Type</th>
+              <th className="p-2">Received</th>
+              <th className="p-2">Resolved</th>
+              <th className="p-2">Pending</th>
+              <th className="p-2">Resolved Percentage</th>
             </tr>
           </thead>
           <tbody>
@@ -301,8 +301,8 @@ return (
         <h2 className="text-2xl font-bold">OPEN MANHOLE TOWN WISE</h2>
       </div>
 
-      <div className="space-y-6 mt-5 max-w-auto">
-        <table className="p-6 w-full bg-white shadow-lg rounded-xl max-w-auto">
+      <div className="px-2  w-[1440px] sm:w-full">
+        <table className="my-3 p-6 w-full bg-white shadow-lg rounded max-w-auto">
           <thead>
             <tr>
               <th className="border p-2 bg-gray-200">Category</th>
@@ -325,7 +325,7 @@ return (
           </tbody>
         </table>
 
-        <table className="p-6 w-full bg-white shadow-lg rounded-xl max-w-auto">
+        <table className="p-6 w-full bg-white shadow-lg rounded max-w-auto">
           <thead>
             <tr>
               <th className="border p-2 bg-gray-200">Category</th>
@@ -354,8 +354,8 @@ return (
         <h2 className="text-2xl font-bold">DAMAGE MANHOLE TOWN WISE</h2>
       </div>
 
-      <div className="space-y-6 mt-5">
-        <table className="p-6 w-full bg-white shadow-lg rounded-xl max-w-auto">
+      <div className="px-2 w-[1440px] sm:w-full">
+        <table className="my-3 p-6 w-full bg-white shadow-lg rounded max-w-auto">
           <thead>
             <tr>
               <th className="border p-2 bg-gray-200">Category</th>
@@ -404,7 +404,7 @@ return (
     </main>
 
     {/* Footer */} 
-    <footer className="bg-gray-800 text-white py-3">
+    <footer className="bg-gray-800 text-white py-3 w-[1440px] md:w-full">
       <div className="container mx-auto text-center">
         <p>&copy; {new Date().getFullYear()} Karachi Water and Sewerage Corporation</p>
       </div>
