@@ -237,11 +237,16 @@ return (
         </div>
         <div className="bg-[#f5f7fa] p-6 rounded-xl flex items-center justify-between shadow-lg max-w-auto hover:bg-[#e4e9f2] transition-colors">
           <h3 className="text-lg font-semibold text-gray-700">Total Complaints Resolved</h3>
-          <p className="text-2xl font-bold text-green-600">{topCardsData.Resolved}</p>
+          <p className="text-2xl font-bold text-green-600 leading-none">{topCardsData.Resolved}
+          <br/><span className="text-gray-500 text-sm font-thin ml-1">{((topCardsData.Resolved / topCardsData.Registered) * 100).toFixed(2)}%</span>
+          </p>
         </div>
         <div className="bg-[#f5f7fa] p-6 rounded-xl flex items-center justify-between shadow-lg max-w-auto hover:bg-[#e4e9f2] transition-colors">
           <h3 className="text-lg font-semibold text-gray-700">Total Complaints Pending</h3>
-          <p className="text-2xl font-bold text-red-600">{topCardsData.Pending}</p>
+          <p className="text-2xl font-bold text-red-600 leading-none">{topCardsData.Pending}
+          <br/><span className="text-gray-500 text-sm font-thin ml-1">{((topCardsData.Pending / topCardsData.Registered) * 100).toFixed(2)}%</span>
+          </p>
+          
         </div>
       </div>
 
@@ -286,7 +291,8 @@ return (
             {pivotData.map((row, index) => (
               <tr key={index} className="text-center">
                 <td className="border p-2">{row.type}</td>
-                <td className="border p-2">{row.total_registered}</td>
+                <td className="border p-2">{row.total_registered}
+                </td>
                 <td className="border p-2">{row.resolved}</td>
                 <td className="border p-2">{row.pending}</td>
                 <td className="border p-2">{row.resolved_percentage}%</td>
