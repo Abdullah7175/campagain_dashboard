@@ -150,7 +150,7 @@ useEffect(() => {
   fetchData();
   const interval = setInterval(() => {
     fetchData();
-  }, 13000); // Refresh every 10 seconds
+  }, 13000); // Refresh every 13 seconds
 
   return () => clearInterval(interval);
 }, []);
@@ -222,7 +222,7 @@ useEffect(() => {
   fetchData2();
   const interval = setInterval(() => {
     fetchData2();
-  }, 14000); // Refresh every 10 seconds
+  }, 14000); // Refresh every 14 seconds
 
   return () => clearInterval(interval);
 }, []);
