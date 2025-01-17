@@ -228,7 +228,7 @@ useEffect(() => {
 }, []);
 
 return (
-  <div  className="bg-[url(/CMC2.jpg)] bg-cover bg-no-repeat bg-opacity-70 min-h-screen flex flex-col overflow-x-auto text-gray-800"> 
+  <div  className="bg-[url(/CMC2.jpg)] bg-cover bg-no-repeat bg-opacity-70 min-h-screen 2xl:mx-auto flex flex-col overflow-x-auto text-gray-800"> 
     {/* Header */} 
     <div className="flex flex-col sm:flex-row items-center w-full max-xl justify-between ">
       {/* Logo */} 
