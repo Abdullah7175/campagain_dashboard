@@ -97,11 +97,20 @@ useEffect(() => {
 
       const townPivotData = [
         {
+          category: "Registered",
+          ...Object.fromEntries(
+            towns.map(town => [
+              town,
+              result.filter(item => item.Town === town).reduce((acc, item) => acc + item.Total_Complaints, 0).toFixed(0)
+            ])
+          )
+        },
+        {
           category: "Pending",
           ...Object.fromEntries(
             towns.map(town => [
               town,
-              result.filter(item => item.Town === town).reduce((acc, item) => acc + item.Pending, 0)
+              result.filter(item => item.Town === town).reduce((acc, item) => acc + item.Pending, 0).toFixed(0)
             ])
           )
         },
@@ -110,7 +119,7 @@ useEffect(() => {
           ...Object.fromEntries(
             towns.map(town => [
               town,
-              result.filter(item => item.Town === town).reduce((acc, item) => acc + item.Resolved, 0)
+              result.filter(item => item.Town === town).reduce((acc, item) => acc + item.Resolved, 0).toFixed(0)
             ])
           )
         },
@@ -125,7 +134,7 @@ useEffect(() => {
                       .filter(item => item.Town === town)
                       .reduce((acc, item) => acc + (item.Percentage_Resolved || 0), 0) / 
                     result.filter(item => item.Town === town).length
-                  ).toFixed(2) + "%"
+                  ).toFixed(0) + "%"
                 : "N/A"
             ])
           )
@@ -160,11 +169,20 @@ useEffect(() => {
 
       const townPivotData2 = [
         {
+          category: "Registered",
+          ...Object.fromEntries(
+            towns.map(town => [
+              town,
+              result.filter(item => item.Town === town).reduce((acc, item) => acc + item.Total_Complaints, 0).toFixed(0)
+            ])
+          )
+        },
+        {
           category: "Pending",
           ...Object.fromEntries(
             towns.map(town => [
               town,
-              result.filter(item => item.Town === town).reduce((acc, item) => acc + item.Pending, 0)
+              result.filter(item => item.Town === town).reduce((acc, item) => acc + item.Pending, 0).toFixed(0)
             ])
           )
         },
@@ -173,7 +191,7 @@ useEffect(() => {
           ...Object.fromEntries(
             towns.map(town => [
               town,
-              result.filter(item => item.Town === town).reduce((acc, item) => acc + item.Resolved, 0)
+              result.filter(item => item.Town === town).reduce((acc, item) => acc + item.Resolved, 0).toFixed(0)
             ])
           )
         },
@@ -188,8 +206,8 @@ useEffect(() => {
                       .filter(item => item.Town === town)
                       .reduce((acc, item) => acc + (item.Percentage_Resolved || 0), 0) / 
                     result.filter(item => item.Town === town).length
-                  ).toFixed(2) + "%"
-                : "N/A"
+                  ).toFixed(0) + "%"
+                : "0"
             ])
           )
         }
