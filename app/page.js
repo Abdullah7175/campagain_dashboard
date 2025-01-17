@@ -272,13 +272,13 @@ return (
         <div className="bg-[#3ef150] p-6 rounded-xl flex items-center justify-between shadow-lg max-w-auto ">
           <h3 className="text-lg font-semibold text-white">Total Complaints Resolved</h3>
           <p className="text-2xl font-bold text-white leading-none">{topCardsData.Resolved}
-          <br/><span className="text-white text-sm font-thin ml-1">{((topCardsData.Resolved / topCardsData.Registered) * 100).toFixed(2)}%</span>
+          <br/><span className="text-white font-bold text-sm  ml-1">{((topCardsData.Resolved / topCardsData.Registered) * 100).toFixed(2)}%</span>
           </p>
         </div>
         <div className="bg-[#f03232] p-6 rounded-xl flex items-center justify-between shadow-lg max-w-auto ">
           <h3 className="text-lg font-semibold text-white">Total Complaints Pending</h3>
           <p className="text-2xl font-bold text-white leading-none">{topCardsData.Pending}
-          <br/><span className="text-white text-sm font-thin ml-1">{((topCardsData.Pending / topCardsData.Registered) * 100).toFixed(2)}%</span>
+          <br/><span className="text-white font-bold text-sm  ml-1">{((topCardsData.Pending / topCardsData.Registered) * 100).toFixed(2)}%</span>
           </p>
           
         </div>
