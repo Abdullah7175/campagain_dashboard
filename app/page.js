@@ -266,19 +266,19 @@ return (
       {/* Top Cards */} 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-5 px-2">
         <div className="bg-[#4285eb] p-6 rounded-xl flex items-center justify-between shadow-lg max-w-auto">
-          <h3 className="text-lg font-semibold text-white">Total Complaints Registered</h3>
-          <p className="text-2xl font-bold text-white">{topCardsData.Registered}</p>
+          <h3 className="text-2xl font-semibold text-white">Total Complaints Registered</h3>
+          <p className="text-3xl font-bold text-white">{topCardsData.Registered}</p>
         </div>
-        <div className="bg-[#3ef150] p-6 rounded-xl flex items-center justify-between shadow-lg max-w-auto ">
-          <h3 className="text-lg font-semibold text-white">Total Complaints Resolved</h3>
-          <p className="text-2xl font-bold text-white leading-none">{topCardsData.Resolved}
-          <br/><span className="text-white font-bold text-sm  ml-1">{((topCardsData.Resolved / topCardsData.Registered) * 100).toFixed(2)}%</span>
+        <div className="bg-[#24d135] p-6 rounded-xl flex items-center justify-between shadow-lg max-w-auto ">
+          <h3 className="text-2xl font-semibold text-white">Total Complaints Resolved</h3>
+          <p className="text-3xl font-bold text-white leading-none">{topCardsData.Resolved}
+          <br/><span className="text-white font-bold text-lg  ml-1">{((topCardsData.Resolved / topCardsData.Registered) * 100).toFixed(2)}%</span>
           </p>
         </div>
         <div className="bg-[#f03232] p-6 rounded-xl flex items-center justify-between shadow-lg max-w-auto ">
-          <h3 className="text-lg font-semibold text-white">Total Complaints Pending</h3>
-          <p className="text-2xl font-bold text-white leading-none">{topCardsData.Pending}
-          <br/><span className="text-white font-bold text-sm  ml-1">{((topCardsData.Pending / topCardsData.Registered) * 100).toFixed(2)}%</span>
+          <h3 className="text-2xl font-semibold text-white">Total Complaints Pending</h3>
+          <p className="text-3xl font-bold text-white leading-none">{topCardsData.Pending}
+          <br/><span className="text-white font-bold text-lg  ml-1">{((topCardsData.Pending / topCardsData.Registered) * 100).toFixed(2)}%</span>
           </p>
           
         </div>
@@ -301,7 +301,7 @@ return (
               Mobile-App: <span className="font-bold text-white">{sdata.Mobile_App}</span>
             </h3>
           </div>
-          <div className="bg-[#3ef150] p-4 rounded-lg shadow-md h-15">
+          <div className="bg-[#24d135] p-4 rounded-lg shadow-md h-15">
             <h3 className="text-lg font-semibold text-white">
               Call Center: <span className="font-bold text-white">{sdata.Call_Center_CC}</span>
             </h3>
