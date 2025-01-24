@@ -1,12 +1,10 @@
 import mysql from "mysql2/promise";
 
-const dbUrl = process.env.DATABASE_URL;
-const pass = process.env.DATABASE_PASS;
 // Database configuration
 const dbConfig = {
-  host: dbUrl,
+  host: "210.2.130.186",
   user: "rocky",
-  password: pass,
+  password: "**@/#Abc1",
   database: "mshostin_kwsb",
   port: 3306, // Default MySQL port
 };
